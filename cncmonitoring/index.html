@@ -1,11 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cmn-Hans">
 <head>
 	<meta charset="UTF-8">
 	<title>首页</title>
 </head>
 <body>
+	<!-- 导航头 -->
+	<div class="page_control">
+		<div class="page_control_item" index="1" onclick="1">
+			数字样机仿真测试
+		</div>
+		<div class="page_control_item" index="2" onclick="2">
+			主轴前端面振动 CA模型
+		</div>
+		<div class="page_control_item" index="3" onclick="3">
+			监测敏感点振动测试实验
+		</div>
+	</div>
 
-		<p>首页</p>
+ 	<!--数字样机方针测试-->
+ 	<div class="page_control_one" id="digital_prototype_simulation_test">
+ 		<div class="simulation_category">
+	 		<div class="simulation_category_title">仿真类别</div>
+	 		<div class="simulation_category_item">
+	 			<input type="radio" name="simulation" content="车削工艺系统模态测试" checked />
+	 			<label>车削工艺系统模态测试</label>
+	 		</div>
+	 		 <div class="simulation_category_item">
+	 			<input type="radio" name="simulation" content="车削工艺系统谐响应测试" />
+	 			<label>车削工艺系统谐响应测试</label>
+	 		</div>
+	 		<div class="simulation_category_item">
+	 			<input type="radio" name="simulation" content="车削工艺系统频响函数测试" />
+	 			<label>车削工艺系统频响函数测试</label>
+	 		</div>
+ 		</div>
+ 
+	 	<div class="selected">
+	 		<label>阶数选择</label>
+	 		<select name="阶数选择器" id="order_choose">
+	 			<option value="1" selected="selected">1</option>
+	 			<option value="2">2</option>
+	 			<option value="3">3</option>
+	 			<option value="4">4</option>
+	 		</select>
+	 	</div>
+
+	 	<div class="graphical_display">
+	 		<div class="graphical_display_title">图形显示</div>
+	 		<div class="graphical_display_img">
+	 			<img src="" alt="">
+	 		</div>
+	 	</div>
+
+	 	<div class="modal_descriptions">
+	 		<div class="modal_descriptions_title">振型描述</div>
+	 		<div class="modal_descriptions_content">描述内容</div>
+	 	</div>
+
+	 	<div class="natural_frequency">
+	 		<label>固有频率</label>
+	 		<input type="text" placeholder="" /> 
+	 	</div>
+ 	</div>
+
+
+ 	<div class="page_control_two" hidden="true">
+ 		第二个页面
+ 	</div>
+
+ 	<div class="page_control_three" hidden="true">
+ 		 <div class="deveice_name">
+ 			<div class="deveice_name_title">设备名称</div>
+ 			<div class="deveice_name_content">
+ 				<label>名称</label>
+ 				<select name="selcet_deveice_name" id="">
+ 					<option selected="true">USB-1608Plus</option>
+ 				</select>
+ 			</div>
+ 		</div>
+ 		<div class="sampling_frequency">
+ 			<div class="sampling_frequency_title">采样频率设置</div>
+ 			<div class="sampling_frequency_content">
+ 				<label>采样频率</label>
+ 				<select name="selcet_sampling_frequency" id="">
+ 					<option selected="true">50HZ</option>
+ 				</select>
+ 			</div>
+ 		</div>
+ 		<div class="triggered">
+ 			<div class="triggered_title">触发方式</div>
+ 			<div class="triggered_content_content">
+ 				<label>内触发</label>
+ 				<input type="radio" name="radio_triggered" content="内触发"/>
+ 			</div>
+ 			<div class="triggered_content_content">
+ 				<label>外触发</label>
+ 				<input type="radio" name="radio_triggered" value="外触发" checked="checked" />
+ 			</div>
+ 		</div>
+
+ 		<div class="channel_settings">
+ 			<div class="channel_settings_title">通道设置</div>
+ 			<table border="1" >
+ 				<tr>
+ 					<td>通道号</td>
+ 					<td>测点编号</td>
+ 					<td>测点位置/方向</td>
+ 					<td>传感器型号-方向</td>
+ 					<td>信号类型</td>
+ 					<td>信号单位</td>
+ 				</tr>
+ 				<tr>
+ 					<td>Channel 1</td>
+ 					<td>1</td>
+ 					<td>主轴前端/X</td>
+ 					<td>YD623-X</td>
+ 					<td></td>
+ 					<td></td>
+ 				</tr>
+ 			</table>
+ 		</div>
+ 	</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>	
+	<script src="./js/index.js"></script>	
 </body>
 </html>

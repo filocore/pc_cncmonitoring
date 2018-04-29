@@ -7,7 +7,9 @@ $(function(){
 		var password = $("#password_input").val();
 		if (username == preUsername && password == prePassword) {
 			window.location.href = "index.html";
-		};
+		} else {
+			alert("账号或密码错误");
+		}
 	});
 		
 
