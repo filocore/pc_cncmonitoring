@@ -1,0 +1,8 @@
+E:\Cncmonitoring\Cncmonitoring\bin\Debug\Cncmonitoring.exe
+E:\Cncmonitoring\Cncmonitoring\bin\Debug\Cncmonitoring.pdb
+E:\Cncmonitoring\Cncmonitoring\obj\Debug\Cncmonitoring.csprojResolveAssemblyReference.cache
+E:\Cncmonitoring\Cncmonitoring\obj\Debug\Cncmonitoring.Form1.resources
+E:\Cncmonitoring\Cncmonitoring\obj\Debug\Cncmonitoring.Properties.Resources.resources
+E:\Cncmonitoring\Cncmonitoring\obj\Debug\Cncmonitoring.csproj.GenerateResource.Cache
+E:\Cncmonitoring\Cncmonitoring\obj\Debug\Cncmonitoring.exe
+E:\Cncmonitoring\Cncmonitoring\obj\Debug\Cncmonitoring.pdb

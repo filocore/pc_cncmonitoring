@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D58185E2-60A3-4D3C-BC0D-B80A7A139558}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Cncmonitoring</RootNamespace>
+    <AssemblyName>Cncmonitoring</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="bin\Debug\Cncmonitoring.vshost.exe.manifest" />
+    <None Include="bin\Debug\cncmonitoring\.DS_Store" />
+    <None Include="bin\Debug\cncmonitoring\css\bootstrap-grid.css.map" />
+    <None Include="bin\Debug\cncmonitoring\css\bootstrap-grid.min.css.map" />
+    <None Include="bin\Debug\cncmonitoring\css\bootstrap-reboot.css.map" />
+    <None Include="bin\Debug\cncmonitoring\css\bootstrap-reboot.min.css.map" />
+    <None Include="bin\Debug\cncmonitoring\css\bootstrap.css.map" />
+    <None Include="bin\Debug\cncmonitoring\css\bootstrap.min.css.map" />
+    <None Include="bin\Debug\cncmonitoring\js\.DS_Store" />
+    <None Include="bin\Debug\cncmonitoring\js\bootstrap.bundle.js.map" />
+    <None Include="bin\Debug\cncmonitoring\js\bootstrap.bundle.min.js.map" />
+    <None Include="bin\Debug\cncmonitoring\js\bootstrap.js.map" />
+    <None Include="bin\Debug\cncmonitoring\js\bootstrap.min.js.map" />
+    <None Include="bin\Debug\cncmonitoring\resources\.DS_Store" />
+    <None Include="bin\Debug\cncmonitoring\resources\img\.DS_Store" />
+    <None Include="bin\Debug\cncmonitoring\resources\img\frequency\.DS_Store" />
+    <None Include="bin\Debug\cncmonitoring\resources\img\frequency\4\.DS_Store" />
+    <None Include="bin\Debug\cncmonitoring\resources\img\frequency\5\.DS_Store" />
+    <None Include="bin\Debug\cncmonitoring\resources\img\harmonic\.DS_Store" />
+    <None Include="bin\Debug\cncmonitoring\resources\img\harmonic\1\.DS_Store" />
+    <None Include="bin\Debug\cncmonitoring\resources\img\harmonic\2\.DS_Store" />
+    <None Include="bin\Debug\cncmonitoring\resources\img\harmonic\3\.DS_Store" />
+    <None Include="bin\Debug\cncmonitoring\resources\img\harmonic\4\.DS_Store" />
+    <None Include="bin\Debug\cncmonitoring\resources\img\harmonic\5\.DS_Store" />
+    <None Include="bin\Debug\cncmonitoring\resources\img\harmonic\6\.DS_Store" />
+    <None Include="bin\Debug\cncmonitoring\resources\img\harmonic\7\.DS_Store" />
+    <None Include="bin\Debug\cncmonitoring\resources\img\harmonic\8\.DS_Store" />
+    <None Include="bin\Debug\cncmonitoring\resources\img\harmonic\9\.DS_Store" />
+    <None Include="bin\Debug\cncmonitoring\resources\img\model\.DS_Store" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Cncmonitoring.exe" />
+    <Content Include="bin\Debug\Cncmonitoring.pdb" />
+    <Content Include="bin\Debug\Cncmonitoring.vshost.exe" />
+    <Content Include="bin\Debug\cncmonitoring\css\bootstrap-grid.css" />
+    <Content Include="bin\Debug\cncmonitoring\css\bootstrap-grid.min.css" />
+    <Content Include="bin\Debug\cncmonitoring\css\bootstrap-reboot.css" />
+    <Content Include="bin\Debug\cncmonitoring\css\bootstrap-reboot.min.css" />
+    <Content Include="bin\Debug\cncmonitoring\css\bootstrap.css" />
+    <Content Include="bin\Debug\cncmonitoring\css\bootstrap.min.css" />
+    <Content Include="bin\Debug\cncmonitoring\css\style.css" />
+    <Content Include="bin\Debug\cncmonitoring\index.html" />
+    <Content Include="bin\Debug\cncmonitoring\js\bootstrap.bundle.js" />
+    <Content Include="bin\Debug\cncmonitoring\js\bootstrap.bundle.min.js" />
+    <Content Include="bin\Debug\cncmonitoring\js\bootstrap.js" />
+    <Content Include="bin\Debug\cncmonitoring\js\bootstrap.min.js" />
+    <Content Include="bin\Debug\cncmonitoring\js\dialog.js" />
+    <Content Include="bin\Debug\cncmonitoring\js\index.js" />
+    <Content Include="bin\Debug\cncmonitoring\js\jquery-1.11.1.min.js" />
+    <Content Include="bin\Debug\cncmonitoring\js\login.js" />
+    <Content Include="bin\Debug\cncmonitoring\login.html" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\frequency\1\X.JPG" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\frequency\1\Y.JPG" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\frequency\1\Z.JPG" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\frequency\2\X.JPG" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\frequency\2\Y.JPG" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\frequency\2\Z.JPG" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\frequency\3\X.JPG" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\frequency\3\Y.JPG" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\frequency\3\Z.JPG" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\frequency\4\X.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\frequency\4\Y.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\frequency\4\Z.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\frequency\5\X.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\frequency\5\Y.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\frequency\5\Z.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\frequency\6\X.JPG" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\frequency\6\Y.JPG" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\frequency\6\Z.JPG" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\frequency\7\X.JPG" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\frequency\7\Y.JPG" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\frequency\7\Z.JPG" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\frequency\8\X方向频响.png" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\frequency\8\Y方向频响.png" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\frequency\8\Z方向频响.png" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\frequency\9\X方向频响.png" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\frequency\9\Y方向频响.png" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\frequency\9\Z方向频响.png" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\1\100.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\1\125.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\1\150.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\1\175.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\1\200.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\1\225.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\1\250.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\1\275.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\1\300.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\1\60.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\1\75.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\2\100.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\2\125.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\2\150.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\2\175.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\2\200.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\2\225.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\2\250.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\2\275.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\2\300.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\2\60.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\2\75.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\3\100.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\3\125.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\3\150.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\3\175.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\3\200.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\3\225.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\3\250.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\3\275.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\3\300.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\3\60.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\3\75.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\4\100.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\4\125.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\4\150.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\4\175.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\4\200.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\4\225.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\4\250.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\4\275.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\4\300.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\4\60.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\4\75.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\5\100.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\5\125.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\5\150.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\5\175.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\5\200.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\5\225.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\5\250.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\5\275.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\5\300.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\5\60.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\5\75.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\6\100.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\6\125.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\6\150.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\6\175.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\6\200.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\6\225.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\6\250.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\6\275.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\6\300.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\6\60.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\6\75.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\7\100.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\7\125.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\7\150.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\7\175.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\7\200.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\7\225.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\7\250.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\7\275.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\7\300.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\7\60.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\7\75.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\8\100.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\8\125.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\8\150.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\8\175.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\8\200.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\8\225.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\8\250.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\8\275.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\8\300.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\8\60.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\8\75.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\9\100.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\9\125.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\9\150.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\9\175.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\9\200.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\9\225.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\9\250.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\9\275.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\9\300.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\9\60.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\harmonic\9\75.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\model\model1.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\model\model2.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\model\model3.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\model\model4.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\model\model5.jpg" />
+    <Content Include="bin\Debug\cncmonitoring\resources\img\model\model6.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

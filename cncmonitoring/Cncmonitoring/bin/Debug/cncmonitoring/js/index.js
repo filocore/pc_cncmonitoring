@@ -111,16 +111,16 @@ $(function(){
 
 	function setOrderShowing (index) {
 		$(".model_descriptions_content").text(modelDesList[index]);
-		$(".graphical_display_img").attr("src", "./resources/img/model/" + modelImgList[index]);
+		$(".graphical_display_img").attr("src", "resources/img/model/" + modelImgList[index]);
 		$(".natural_frequency").find("input").val(rateList[index]);
 	}
 
 	function setHarmonicShowing () {
-		$(".graphical_display_img").attr("src", "./resources/img/harmonic/" + workingIndex + "/" + frequency + ".jpg");
+		$(".graphical_display_img").attr("src", "resources/img/harmonic/" + workingIndex + "/" + frequency + ".jpg");
 	}
 
 	function setFrequencyShowing() {
-		$(".graphical_display_img").attr("src", "./resources/img/frequency/" + workingIndex + "/" + workingPoint + ".jpg");
+		$(".graphical_display_img").attr("src", "resources/img/frequency/" + workingIndex + "/" + workingPoint + ".jpg");
 	}
 });
 
